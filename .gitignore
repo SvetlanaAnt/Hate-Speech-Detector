@@ -27,6 +27,7 @@ hatespeech-py/data/output*.json
 hatespeech-py/logs/*.log
 hatespeech-py/logs/*.csv
 !hatespeech-py/logs/hatespeech.log
+!hatespeech-py/logs/evaluation.csv
 
 /hatespeech-py/models/*
 /hatespeech-py/model_evaluation/dataset/*

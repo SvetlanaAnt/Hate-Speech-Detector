@@ -6,3 +6,22 @@
 2026-05-31 12:35:58 | INFO | Model initialization completed.
 2026-05-31 12:35:58 | INFO | Loading model: Hate-speech-CNERG/bert-base-uncased-hatexplain (type=bert, device=cpu, batch_size=32, max_seq_length=512)
 2026-05-31 12:35:59 | INFO | Model initialization completed.
+2026-05-31 13:26:56 | INFO | === HateSpeech run started ===
+2026-05-31 13:26:56 | INFO | Timestamp: 2026-05-31T11:26:56.557914+00:00
+2026-05-31 13:26:56 | INFO | Python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2026-05-31 13:26:56 | INFO | Platform: Windows-10-10.0.19044-SP0
+2026-05-31 13:26:56 | INFO | Args: {'model': 'electra_hatexplain', 'models': None, 'list_models': False, 'audit_models': False, 'download_models': None, 'input': '.\\data\\messages.json', 'output': '.\\data\\output.json', 'hate_label_id': [], 'hate_label_name': [], 'hate_threshold': 0.5, 'batch_size': 32, 'max_seq_length': 512, 'use_cuda': False, 'log_file': 'logs/hatespeech.log', 'evaluation_log_file': '', 'log_items': False, 'log_texts': False, 'model_catalog': '', 'download_dir': 'C:\\Users\\Windows\\Documents\\GitHub-HateSpeechDetector\\Hate-Speech-Detector\\hatespeech-py\\models', 'models_dir': '.\\models\\', 'model_source': 'offline', 'predictions': False}
+2026-05-31 13:26:56 | INFO | Package versions: {'simpletransformers': '0.70.5', 'transformers': '4.57.6', 'torch': '2.10.0', 'numpy': '2.3.4'}
+2026-05-31 13:26:56 | INFO | Evaluation log file: C:\Users\Windows\Documents\GitHub-HateSpeechDetector\Hate-Speech-Detector\hatespeech-py\logs\evaluation.csv
+2026-05-31 13:26:56 | INFO | Input: .\data\messages.json
+2026-05-31 13:26:56 | INFO | Parsed input as object with "items" list (106 items).
+2026-05-31 13:26:56 | INFO | Items count: 106
+2026-05-31 13:26:56 | INFO | Loading model: models\electra_hatexplain (type=electra, device=cpu, batch_size=32, max_seq_length=512)
+2026-05-31 13:26:57 | INFO | Model initialization completed.
+2026-05-31 13:26:57 | INFO | Model loaded: models\electra_hatexplain
+2026-05-31 13:26:57 | INFO | Model config: num_labels=3, id2label={0: 'hatespeech', 1: 'normal', 2: 'offensive'}
+2026-05-31 13:26:57 | INFO | Running inference on 106 items.
+2026-05-31 13:27:09 | INFO | Inference completed: 17/106 items flagged as hate speech.
+2026-05-31 13:27:09 | INFO | Hate label IDs: [0, 2]
+2026-05-31 13:27:09 | INFO | Output file: .\data\output.json
+2026-05-31 13:27:09 | INFO | === HateSpeech run finished ===
