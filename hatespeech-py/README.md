@@ -228,7 +228,7 @@ pip install pyinstaller
 3. Build without bundling local models into the executable:
 
 ```bash
-pyinstaller --clean --noconfirm --name hatespeech_cli_v1 main.py
+pyinstaller --onefile --clean --noconfirm --name hatespeech_cli_v1 main.py
 ```
 
 4. The Windows output is:
