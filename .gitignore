@@ -31,6 +31,7 @@ hatespeech-py/logs/*.csv
 /hatespeech-py/models/*
 /hatespeech-py/model_evaluation/dataset/*
 /hatespeech-py/model_evaluation/logs/*
+!/hatespeech-py/model_evaluation/logs/evaluation.log
 /hatespeech-py/model_evaluation/outputs/*
 
 ### Java build outputs

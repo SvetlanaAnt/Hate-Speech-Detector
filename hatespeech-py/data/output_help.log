@@ -1,0 +1,68 @@
+$ python3 main.py --help > data/output_python.log
+
+usage: main.py [-h] (--model MODEL | --models MODELS | --list-models | --audit-models | --download-models [DOWNLOAD_MODELS])
+               [--input INPUT] [--output OUTPUT] [--hate-label-id HATE_LABEL_ID] [--hate-label-name HATE_LABEL_NAME]
+               [--hate-threshold HATE_THRESHOLD] [--batch-size BATCH_SIZE] [--max-seq-length MAX_SEQ_LENGTH] [--use-cuda]
+               [--log-file LOG_FILE] [--evaluation-log-file EVALUATION_LOG_FILE] [--log-items] [--log-texts] [--model-catalog FILE]
+               [--download-dir DOWNLOAD_DIR] [--models-dir MODELS_DIR] [--model-source {auto,offline,online}] [--predictions]
+
+options:
+  -h, --help            show this help message and exit
+
+Required:
+  --model MODEL         Model alias from catalog
+  --models MODELS       Comma-separated model aliases. If set, overrides --model.
+  --list-models         Print catalog models and exit.
+  --audit-models        Load all catalog models and print id2label.
+  --download-models [DOWNLOAD_MODELS]
+                        Download catalog models locally. Use without value for all, or pass comma-separated aliases/IDs.
+
+Optional:
+  --input INPUT         Path to JSON file. If omitted, reads from stdin.
+  --output OUTPUT       Path to JSON file. If omitted, writes to stdout.
+  --hate-label-id HATE_LABEL_ID
+                        Label ID representing hate speech (can be repeated).
+  --hate-label-name HATE_LABEL_NAME
+                        Label name representing hate speech (can be repeated).
+  --hate-threshold HATE_THRESHOLD
+                        Threshold on hate_score for binary/multilabel (default 0.5).
+  --batch-size BATCH_SIZE
+                        Batch size for inference.
+  --max-seq-length MAX_SEQ_LENGTH
+                        Maximum sequence length.
+  --use-cuda            Enable GPU if available.
+  --log-file LOG_FILE   Path to log file.
+  --evaluation-log-file EVALUATION_LOG_FILE
+                        Path to CSV evaluation log. Defaults to evaluation_<timestamp>.csv next to timestamped --log-file.
+  --log-items           Log results for each item (without text).
+  --log-texts           Log full text of each item (WARNING: sensitive content).
+  --model-catalog FILE  Path to JSON catalog. If set, it is merged with the built-in catalog (external overrides the same alias).
+  --download-dir DOWNLOAD_DIR
+                        Directory where --download-models stores local model folders.
+  --models-dir MODELS_DIR
+                        Directory containing local model folders for offline/auto model loading.
+  --model-source {auto,offline,online}
+                        Model source. auto uses local model if it exists, otherwise online.
+  --predictions         If set and multiple models are used, group outputs under a predictions field per input item.
+
+
+
+$ python3 main.py --list-models >> data/output_python.log
+
+alias                       | model_type | offline_model_id                   | online_model_id                                  | description                                                                                                                                                                                                                                                                                           
+----------------------------+------------+------------------------------------+--------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+electra_hatexplain          | electra    | models/electra_hatexplain          | TehranNLP-org/electra-base-hateXplain            | Good choice for broader screening. Tends to flag more potentially hateful or offensive content and is useful when higher recall is preferred over stricter precision. Model: google/electra-base-discriminator fine-tuned on the HateXplain dataset.                                                  
+roberta_dynabench_target    | roberta    | models/roberta_dynabench_target    | facebook/roberta-hate-speech-dynabench-r4-target | Strong general-purpose option for hate speech detection, especially when you want a balanced tradeoff between accuracy, precision, and recall. Model: Facebook RoBERTa model released for dynamically generated online hate detection data in the R4 target setting.                                  
+roberta_twitter_hate_latest | roberta    | models/roberta_twitter_hate_latest | cardiffnlp/twitter-roberta-base-hate-latest      | Well suited for short social-media style posts. Often more precise on concise, platform-like messages such as tweets or brief comments. Model: cardiffnlp/twitter-roberta-base-2022-154m fine-tuned as a binary hate-speech classifier on a combination of 13 English hate-speech datasets.           
+bert_hatexplain_cnerg       | bert       | models/bert_hatexplain_cnerg       | Hate-speech-CNERG/bert-base-uncased-hatexplain   | More conservative HateXplain-based option. Useful when you want stronger precision and fewer false positives, especially on explicit abusive language. Model: bert-base-uncased classifier trained on the HateXplain dataset from Gab and Twitter, with human rationales incorporated during training.
+
+
+$ python3 main.py --audit-models >> data/output_python.log
+alias                       | model_source | model_id                                         | model_type | id2label                                       
+----------------------------+--------------+--------------------------------------------------+------------+------------------------------------------------
+electra_hatexplain          | auto         | TehranNLP-org/electra-base-hateXplain            | electra    | {0: 'hatespeech', 1: 'normal', 2: 'offensive'} 
+roberta_dynabench_target    | auto         | facebook/roberta-hate-speech-dynabench-r4-target | roberta    | {0: 'nothate', 1: 'hate'}                      
+roberta_twitter_hate_latest | auto         | cardiffnlp/twitter-roberta-base-hate-latest      | roberta    | {0: 'NOT-HATE', 1: 'HATE'}                     
+bert_hatexplain_cnerg       | auto         | Hate-speech-CNERG/bert-base-uncased-hatexplain   | bert       | {0: 'hate speech', 1: 'normal', 2: 'offensive'}
+
+

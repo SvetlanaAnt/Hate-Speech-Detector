@@ -1,0 +1,8 @@
+2026-05-31 12:35:39 | INFO | Loading model: TehranNLP-org/electra-base-hateXplain (type=electra, device=cpu, batch_size=32, max_seq_length=512)
+2026-05-31 12:35:56 | INFO | Model initialization completed.
+2026-05-31 12:35:56 | INFO | Loading model: facebook/roberta-hate-speech-dynabench-r4-target (type=roberta, device=cpu, batch_size=32, max_seq_length=512)
+2026-05-31 12:35:56 | INFO | Model initialization completed.
+2026-05-31 12:35:56 | INFO | Loading model: cardiffnlp/twitter-roberta-base-hate-latest (type=roberta, device=cpu, batch_size=32, max_seq_length=512)
+2026-05-31 12:35:58 | INFO | Model initialization completed.
+2026-05-31 12:35:58 | INFO | Loading model: Hate-speech-CNERG/bert-base-uncased-hatexplain (type=bert, device=cpu, batch_size=32, max_seq_length=512)
+2026-05-31 12:35:59 | INFO | Model initialization completed.

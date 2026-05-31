@@ -1,0 +1,168 @@
+$ python3 hatespeech-py/model_evaluation/main.py --dataset-index 1
+
+2026-05-27 10:22:50 | INFO | Input: /Users/ceca/Documents/DR/ML rad/ML PROJEKAT/Hate-Speech-Detector/dataset/1-SemEval2020Task12/extended_test/test_a_tweets_all.tsv (dataset 1)
+2026-05-27 10:22:50 | INFO | Parsed TSV (5995 items).
+2026-05-27 10:22:50 | INFO | Loaded labels: 5993
+2026-05-27 10:22:50 | INFO | Ground truth stats: labeled=5993 positive=3002 negative=2991 unlabeled=2 pos_values=OFF
+2026-05-27 10:22:50 | INFO | === Running model: electra_hatexplain (hatespeech-py/models/electra_hatexplain) ===
+2026-05-27 10:22:50 | INFO | Loading model: hatespeech-py/models/electra_hatexplain (type=electra, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 10:22:50 | INFO | Model initialization completed.
+2026-05-27 10:22:50 | INFO | Model config: problem_type=single_label_classification, num_labels=3, id2label={0: 'hatespeech', 1: 'normal', 2: 'offensive'}
+2026-05-27 10:22:50 | INFO | Running inference on 5995 items.
+2026-05-27 10:23:23 | INFO | Inference completed: 769/5995 items flagged as hate speech.
+2026-05-27 10:23:23 | INFO | Hate label IDs: [0, 2]
+2026-05-27 10:23:23 | INFO | === Running model: roberta_dynabench_target (hatespeech-py/models/roberta_dynabench_target) ===
+2026-05-27 10:23:23 | INFO | Loading model: hatespeech-py/models/roberta_dynabench_target (type=roberta, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 10:23:23 | INFO | Model initialization completed.
+2026-05-27 10:23:23 | INFO | Model config: problem_type=single_label_classification, num_labels=2, id2label={0: 'nothate', 1: 'hate'}
+2026-05-27 10:23:23 | INFO | Running inference on 5995 items.
+2026-05-27 10:24:02 | INFO | Inference completed: 1982/5995 items flagged as hate speech.
+2026-05-27 10:24:02 | INFO | Hate label IDs: [1]
+2026-05-27 10:24:02 | INFO | === Running model: roberta_twitter_hate_latest (hatespeech-py/models/roberta_twitter_hate_latest) ===
+2026-05-27 10:24:02 | INFO | Loading model: hatespeech-py/models/roberta_twitter_hate_latest (type=roberta, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 10:24:02 | INFO | Model initialization completed.
+2026-05-27 10:24:02 | INFO | Model config: problem_type=single_label_classification, num_labels=2, id2label={0: 'NOT-HATE', 1: 'HATE'}
+2026-05-27 10:24:02 | INFO | Running inference on 5995 items.
+2026-05-27 10:24:40 | INFO | Inference completed: 527/5995 items flagged as hate speech.
+2026-05-27 10:24:40 | INFO | Hate label IDs: [1]
+2026-05-27 10:24:40 | INFO | === Running model: bert_hatexplain_cnerg (hatespeech-py/models/bert_hatexplain_cnerg) ===
+2026-05-27 10:24:40 | INFO | Loading model: hatespeech-py/models/bert_hatexplain_cnerg (type=bert, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 10:24:40 | INFO | Model initialization completed.
+2026-05-27 10:24:40 | INFO | Model config: problem_type=None, num_labels=3, id2label={0: 'hate speech', 1: 'normal', 2: 'offensive'}
+2026-05-27 10:24:40 | INFO | Running inference on 5995 items.
+2026-05-27 10:25:14 | INFO | Inference completed: 590/5995 items flagged as hate speech.
+2026-05-27 10:25:14 | INFO | Hate label IDs: [0, 2]
+2026-05-27 10:25:14 | INFO | === Summary ===
+model                       | items | labeled | hate_count | hate_rate | acc    | prec   | rec    | f1    
+----------------------------+-------+---------+------------+-----------+--------+--------+--------+-------
+electra_hatexplain          | 5995  | 5993    | 769        | 0.1283    | 0.6117 | 0.9389 | 0.2405 | 0.3829
+roberta_dynabench_target    | 5995  | 5993    | 1982       | 0.3306    | 0.7791 | 0.9233 | 0.6096 | 0.7343
+roberta_twitter_hate_latest | 5995  | 5993    | 527        | 0.0879    | 0.5793 | 0.9564 | 0.1679 | 0.2856
+bert_hatexplain_cnerg       | 5995  | 5993    | 590        | 0.0984    | 0.5859 | 0.9407 | 0.1849 | 0.3090
+
+
+$ python3 hatespeech-py/model_evaluation/main.py --dataset-index 2
+
+2026-05-27 10:57:34 | INFO | Input: /Users/ceca/Documents/DR/ML rad/ML PROJEKAT/Hate-Speech-Detector/dataset/2-Davidson/data/labeled_data.csv (dataset 2)
+2026-05-27 10:57:34 | INFO | Parsed Davidson CSV (24783 items).
+2026-05-27 10:57:34 | INFO | Loaded labels: 24783 (header CSV)
+2026-05-27 10:57:34 | INFO | Ground truth stats: labeled=24783 positive=20620 negative=4163 unlabeled=0 pos_values=0,1
+2026-05-27 10:57:34 | INFO | === Running model: electra_hatexplain (hatespeech-py/models/electra_hatexplain) ===
+2026-05-27 10:57:34 | INFO | Loading model: hatespeech-py/models/electra_hatexplain (type=electra, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 10:57:34 | INFO | Model initialization completed.
+2026-05-27 10:57:34 | INFO | Model config: problem_type=single_label_classification, num_labels=3, id2label={0: 'hatespeech', 1: 'normal', 2: 'offensive'}
+2026-05-27 10:57:34 | INFO | Running inference on 24783 items.
+2026-05-27 11:01:09 | INFO | Inference completed: 11570/24783 items flagged as hate speech.
+2026-05-27 11:01:09 | INFO | Hate label IDs: [0, 2]
+2026-05-27 11:01:09 | INFO | === Running model: roberta_dynabench_target (hatespeech-py/models/roberta_dynabench_target) ===
+2026-05-27 11:01:09 | INFO | Loading model: hatespeech-py/models/roberta_dynabench_target (type=roberta, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 11:01:09 | INFO | Model initialization completed.
+2026-05-27 11:01:09 | INFO | Model config: problem_type=single_label_classification, num_labels=2, id2label={0: 'nothate', 1: 'hate'}
+2026-05-27 11:01:09 | INFO | Running inference on 24783 items.
+2026-05-27 11:05:06 | INFO | Inference completed: 19880/24783 items flagged as hate speech.
+2026-05-27 11:05:06 | INFO | Hate label IDs: [1]
+2026-05-27 11:05:06 | INFO | === Running model: roberta_twitter_hate_latest (hatespeech-py/models/roberta_twitter_hate_latest) ===
+2026-05-27 11:05:06 | INFO | Loading model: hatespeech-py/models/roberta_twitter_hate_latest (type=roberta, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 11:05:06 | INFO | Model initialization completed.
+2026-05-27 11:05:06 | INFO | Model config: problem_type=single_label_classification, num_labels=2, id2label={0: 'NOT-HATE', 1: 'HATE'}
+2026-05-27 11:05:06 | INFO | Running inference on 24783 items.
+2026-05-27 11:08:15 | INFO | Inference completed: 14659/24783 items flagged as hate speech.
+2026-05-27 11:08:15 | INFO | Hate label IDs: [1]
+2026-05-27 11:08:15 | INFO | === Running model: bert_hatexplain_cnerg (hatespeech-py/models/bert_hatexplain_cnerg) ===
+2026-05-27 11:08:15 | INFO | Loading model: hatespeech-py/models/bert_hatexplain_cnerg (type=bert, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 11:08:15 | INFO | Model initialization completed.
+2026-05-27 11:08:15 | INFO | Model config: problem_type=None, num_labels=3, id2label={0: 'hate speech', 1: 'normal', 2: 'offensive'}
+2026-05-27 11:08:15 | INFO | Running inference on 24783 items.
+2026-05-27 11:19:12 | INFO | Inference completed: 14065/24783 items flagged as hate speech.
+2026-05-27 11:19:12 | INFO | Hate label IDs: [0, 2]
+2026-05-27 11:19:12 | INFO | === Summary ===
+model                       | items | labeled | hate_count | hate_rate | acc    | prec   | rec    | f1    
+----------------------------+-------+---------+------------+-----------+--------+--------+--------+-------
+electra_hatexplain          | 24783 | 24783   | 11570      | 0.4669    | 0.5955 | 0.9579 | 0.5375 | 0.6886
+roberta_dynabench_target    | 24783 | 24783   | 19880      | 0.8022    | 0.9319 | 0.9762 | 0.9411 | 0.9583
+roberta_twitter_hate_latest | 24783 | 24783   | 14659      | 0.5915    | 0.7484 | 0.9907 | 0.7043 | 0.8233
+bert_hatexplain_cnerg       | 24783 | 24783   | 14065      | 0.5675    | 0.6866 | 0.9569 | 0.6527 | 0.7761
+
+
+$ python3 hatespeech-py/model_evaluation/main.py --dataset-index 3
+
+2026-05-27 14:36:54 | INFO | Input: /Users/ceca/Documents/DR/ML rad/ML PROJEKAT/Hate-Speech-Detector/dataset/3-A-Benchmark-Dataset/data/gab.csv (dataset 3)
+2026-05-27 14:36:54 | INFO | Parsed Gab CSV (11825 conversations expanded to 33776 post items).
+2026-05-27 14:36:54 | INFO | Ground truth stats: labeled=33776 positive=14614 negative=19162 unlabeled=0 pos_values=1
+2026-05-27 14:36:54 | INFO | === Running model: electra_hatexplain (hatespeech-py/models/electra_hatexplain) ===
+2026-05-27 14:36:54 | INFO | Loading model: hatespeech-py/models/electra_hatexplain (type=electra, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 14:36:54 | INFO | Model initialization completed.
+2026-05-27 14:36:54 | INFO | Model config: problem_type=single_label_classification, num_labels=3, id2label={0: 'hatespeech', 1: 'normal', 2: 'offensive'}
+2026-05-27 14:36:54 | INFO | Running inference on 33776 items.
+2026-05-27 14:44:02 | INFO | Inference completed: 18548/33776 items flagged as hate speech.
+2026-05-27 14:44:02 | INFO | Hate label IDs: [0, 2]
+2026-05-27 14:44:02 | INFO | === Running model: roberta_dynabench_target (hatespeech-py/models/roberta_dynabench_target) ===
+2026-05-27 14:44:02 | INFO | Loading model: hatespeech-py/models/roberta_dynabench_target (type=roberta, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 14:44:02 | INFO | Model initialization completed.
+2026-05-27 14:44:02 | INFO | Model config: problem_type=single_label_classification, num_labels=2, id2label={0: 'nothate', 1: 'hate'}
+2026-05-27 14:44:02 | INFO | Running inference on 33776 items.
+2026-05-27 14:51:25 | INFO | Inference completed: 16250/33776 items flagged as hate speech.
+2026-05-27 14:51:25 | INFO | Hate label IDs: [1]
+2026-05-27 14:51:25 | INFO | === Running model: roberta_twitter_hate_latest (hatespeech-py/models/roberta_twitter_hate_latest) ===
+2026-05-27 14:51:25 | INFO | Loading model: hatespeech-py/models/roberta_twitter_hate_latest (type=roberta, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 14:51:25 | INFO | Model initialization completed.
+2026-05-27 14:51:25 | INFO | Model config: problem_type=single_label_classification, num_labels=2, id2label={0: 'NOT-HATE', 1: 'HATE'}
+2026-05-27 14:51:25 | INFO | Running inference on 33776 items.
+2026-05-27 15:03:17 | INFO | Inference completed: 14274/33776 items flagged as hate speech.
+2026-05-27 15:03:17 | INFO | Hate label IDs: [1]
+2026-05-27 15:03:17 | INFO | === Running model: bert_hatexplain_cnerg (hatespeech-py/models/bert_hatexplain_cnerg) ===
+2026-05-27 15:03:17 | INFO | Loading model: hatespeech-py/models/bert_hatexplain_cnerg (type=bert, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 15:03:17 | INFO | Model initialization completed.
+2026-05-27 15:03:17 | INFO | Model config: problem_type=None, num_labels=3, id2label={0: 'hate speech', 1: 'normal', 2: 'offensive'}
+2026-05-27 15:03:17 | INFO | Running inference on 33776 items.
+2026-05-27 15:11:07 | INFO | Inference completed: 18180/33776 items flagged as hate speech.
+2026-05-27 15:11:07 | INFO | Hate label IDs: [0, 2]
+2026-05-27 15:11:07 | INFO | === Summary ===
+model                       | items | labeled | hate_count | hate_rate | acc    | prec   | rec    | f1    
+----------------------------+-------+---------+------------+-----------+--------+--------+--------+-------
+electra_hatexplain          | 33776 | 33776   | 18548      | 0.5491    | 0.8386 | 0.7470 | 0.9481 | 0.8356
+roberta_dynabench_target    | 33776 | 33776   | 16250      | 0.4811    | 0.8520 | 0.7959 | 0.8850 | 0.8381
+roberta_twitter_hate_latest | 33776 | 33776   | 14274      | 0.4226    | 0.8511 | 0.8358 | 0.8163 | 0.8259
+bert_hatexplain_cnerg       | 33776 | 33776   | 18180      | 0.5383    | 0.8444 | 0.7574 | 0.9422 | 0.8397
+
+
+$ python3 hatespeech-py/model_evaluation/main.py --dataset-index 4
+
+2026-05-27 15:15:32 | INFO | Input: /Users/ceca/Documents/DR/ML rad/ML PROJEKAT/Hate-Speech-Detector/dataset/3-A-Benchmark-Dataset/data/reddit.csv (dataset 4)
+2026-05-27 15:15:32 | INFO | Parsed Reddit CSV (5020 conversations expanded to 22309 post items).
+2026-05-27 15:15:32 | INFO | Ground truth stats: labeled=22309 positive=5257 negative=17052 unlabeled=0 pos_values=1
+2026-05-27 15:15:32 | INFO | === Running model: electra_hatexplain (hatespeech-py/models/electra_hatexplain) ===
+2026-05-27 15:15:32 | INFO | Loading model: hatespeech-py/models/electra_hatexplain (type=electra, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 15:15:32 | INFO | Model initialization completed.
+2026-05-27 15:15:32 | INFO | Model config: problem_type=single_label_classification, num_labels=3, id2label={0: 'hatespeech', 1: 'normal', 2: 'offensive'}
+2026-05-27 15:15:32 | INFO | Running inference on 22309 items.
+2026-05-27 15:20:43 | INFO | Inference completed: 6946/22309 items flagged as hate speech.
+2026-05-27 15:20:43 | INFO | Hate label IDs: [0, 2]
+2026-05-27 15:20:43 | INFO | === Running model: roberta_dynabench_target (hatespeech-py/models/roberta_dynabench_target) ===
+2026-05-27 15:20:43 | INFO | Loading model: hatespeech-py/models/roberta_dynabench_target (type=roberta, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 15:20:43 | INFO | Model initialization completed.
+2026-05-27 15:20:43 | INFO | Model config: problem_type=single_label_classification, num_labels=2, id2label={0: 'nothate', 1: 'hate'}
+2026-05-27 15:20:43 | INFO | Running inference on 22309 items.
+2026-05-27 15:25:57 | INFO | Inference completed: 6034/22309 items flagged as hate speech.
+2026-05-27 15:25:57 | INFO | Hate label IDs: [1]
+2026-05-27 15:25:57 | INFO | === Running model: roberta_twitter_hate_latest (hatespeech-py/models/roberta_twitter_hate_latest) ===
+2026-05-27 15:25:57 | INFO | Loading model: hatespeech-py/models/roberta_twitter_hate_latest (type=roberta, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 15:25:57 | INFO | Model initialization completed.
+2026-05-27 15:25:57 | INFO | Model config: problem_type=single_label_classification, num_labels=2, id2label={0: 'NOT-HATE', 1: 'HATE'}
+2026-05-27 15:25:57 | INFO | Running inference on 22309 items.
+2026-05-27 15:31:14 | INFO | Inference completed: 4458/22309 items flagged as hate speech.
+2026-05-27 15:31:14 | INFO | Hate label IDs: [1]
+2026-05-27 15:31:14 | INFO | === Running model: bert_hatexplain_cnerg (hatespeech-py/models/bert_hatexplain_cnerg) ===
+2026-05-27 15:31:14 | INFO | Loading model: hatespeech-py/models/bert_hatexplain_cnerg (type=bert, device=cpu, batch_size=32, max_seq_length=128)
+2026-05-27 15:31:14 | INFO | Model initialization completed.
+2026-05-27 15:31:14 | INFO | Model config: problem_type=None, num_labels=3, id2label={0: 'hate speech', 1: 'normal', 2: 'offensive'}
+2026-05-27 15:31:14 | INFO | Running inference on 22309 items.
+2026-05-27 15:36:28 | INFO | Inference completed: 6857/22309 items flagged as hate speech.
+2026-05-27 15:36:28 | INFO | Hate label IDs: [0, 2]
+2026-05-27 15:36:28 | INFO | === Summary ===
+model                       | items | labeled | hate_count | hate_rate | acc    | prec   | rec    | f1    
+----------------------------+-------+---------+------------+-----------+--------+--------+--------+-------
+electra_hatexplain          | 22309 | 22309   | 6946       | 0.3114    | 0.8377 | 0.6178 | 0.8162 | 0.7033
+roberta_dynabench_target    | 22309 | 22309   | 6034       | 0.2705    | 0.8383 | 0.6367 | 0.7308 | 0.6805
+roberta_twitter_hate_latest | 22309 | 22309   | 4458       | 0.1998    | 0.8471 | 0.7070 | 0.5996 | 0.6489
+bert_hatexplain_cnerg       | 22309 | 22309   | 6857       | 0.3074    | 0.8405 | 0.6239 | 0.8138 | 0.7063

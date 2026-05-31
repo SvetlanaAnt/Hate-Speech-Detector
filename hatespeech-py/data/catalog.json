@@ -1,0 +1,11 @@
+[
+  {
+    "alias": "custom_hatexplain",
+    "offline_model_id": "models/custom_hatexplain",
+    "online_model_id": "TehranNLP-org/electra-base-hateXplain",
+    "model_type": "electra",
+    "description": "Good choice for broader screening. Tends to flag more potentially hateful or offensive content and is useful when higher recall is preferred over stricter precision.\nModel: google/electra-base-discriminator fine-tuned on the HateXplain dataset.",
+    "hate_label_names": ["hatespeech", "offensive"],
+    "hate_label_ids": [0, 2]
+  }
+]

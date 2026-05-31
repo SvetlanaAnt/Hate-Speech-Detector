@@ -1,0 +1,544 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "id_artifact": 101,
+      "text": "Hello",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.01053699565859426
+    },
+    {
+      "id": 2,
+      "id_artifact": 101,
+      "text": "I hate you and your group.",
+      "label_id": 1,
+      "label_name": "hatespeech",
+      "is_hate_speech": true,
+      "hate_score": 0.47807780140820744
+    },
+    {
+      "id": 3,
+      "id_artifact": 102,
+      "text": "I disagree but respect your opinion.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.00879298936755778
+    },
+    {
+      "id": 4,
+      "id_artifact": 102,
+      "text": "I think this violates the guidelines and should be reviewed.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.010898299231093016
+    },
+    {
+      "id": 5,
+      "id_artifact": 103,
+      "text": "Let's keep it civil and focus on the facts.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.014833834923651942
+    },
+    {
+      "id": 6,
+      "id_artifact": 103,
+      "text": "I will report you, this is unacceptable.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.023333311909552953
+    },
+    {
+      "id": 7,
+      "id_artifact": 104,
+      "text": "This approach doesn't fit our requirements.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.01621072162974659
+    },
+    {
+      "id": 8,
+      "id_artifact": 104,
+      "text": "Thank you for your help, I appreciate it.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.007944672525708492
+    },
+    {
+      "id": 9,
+      "id_artifact": 105,
+      "text": "Please remove this content; it seems off-topic.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.021166895890945003
+    },
+    {
+      "id": 10,
+      "id_artifact": 105,
+      "text": "I disagree, but I won't insult you.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.012717963551105181
+    },
+    {
+      "id": 11,
+      "id_artifact": 106,
+      "text": "I strongly disagree with this conclusion.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.03520689709024548
+    },
+    {
+      "id": 12,
+      "id_artifact": 106,
+      "text": "Please stop spreading hate.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.025508784345068158
+    },
+    {
+      "id": 13,
+      "id_artifact": 107,
+      "text": "This is confusing; can you clarify what you mean?",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.020748033304759512
+    },
+    {
+      "id": 14,
+      "id_artifact": 107,
+      "text": "I disagree with your point, but thanks for sharing.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.009134137147719525
+    },
+    {
+      "id": 15,
+      "id_artifact": 108,
+      "text": "This message is unacceptable; please revise it.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.03207305268191151
+    },
+    {
+      "id": 16,
+      "id_artifact": 108,
+      "text": "Let's discuss this without insults.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.012918927957416473
+    },
+    {
+      "id": 17,
+      "id_artifact": 109,
+      "text": "That comment is out of line.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.010098067716822147
+    },
+    {
+      "id": 18,
+      "id_artifact": 109,
+      "text": "I don't like this, but I'll be respectful.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.0186770351460151
+    },
+    {
+      "id": 19,
+      "id_artifact": 110,
+      "text": "Your argument lacks evidence.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.011462537612065355
+    },
+    {
+      "id": 20,
+      "id_artifact": 110,
+      "text": "Please calm down, there's no need to fight.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.015287127271094105
+    },
+    {
+      "id": 21,
+      "id_artifact": 111,
+      "text": "This behavior is toxic and should stop.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.021635677735681865
+    },
+    {
+      "id": 22,
+      "id_artifact": 111,
+      "text": "Thanks for the update, that's helpful.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.007504518681949222
+    },
+    {
+      "id": 23,
+      "id_artifact": 112,
+      "text": "I hate all of you.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.34130304427971875
+    },
+    {
+      "id": 24,
+      "id_artifact": 112,
+      "text": "This is frustrating, but let's stay polite.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.017209697854779177
+    },
+    {
+      "id": 25,
+      "id_artifact": 113,
+      "text": "You're an idiot, shut up.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.13775244206159504
+    },
+    {
+      "id": 26,
+      "id_artifact": 113,
+      "text": "Could you clarify your point? I might be missing something.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.013515017857691304
+    },
+    {
+      "id": 27,
+      "id_artifact": 114,
+      "text": "Nobody asked you, go away.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.011453951338795643
+    },
+    {
+      "id": 28,
+      "id_artifact": 114,
+      "text": "I disagree, but I'm listening.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.009979630086970524
+    },
+    {
+      "id": 29,
+      "id_artifact": 115,
+      "text": "You are disgusting.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.13644466184562776
+    },
+    {
+      "id": 30,
+      "id_artifact": 115,
+      "text": "Let's keep the conversation respectful.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.013520534194694725
+    },
+    {
+      "id": 31,
+      "id_artifact": 116,
+      "text": "Can you share the source for that claim?",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.01260173344466182
+    },
+    {
+      "id": 32,
+      "id_artifact": 116,
+      "text": "This is not acceptable behavior.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.038758565071817935
+    },
+    {
+      "id": 33,
+      "id_artifact": 117,
+      "text": "I hate you and I hope you disappear.",
+      "label_id": 1,
+      "label_name": "hatespeech",
+      "is_hate_speech": true,
+      "hate_score": 0.7695445952647528
+    },
+    {
+      "id": 34,
+      "id_artifact": 117,
+      "text": "Thanks for the clarification.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.02179794426251363
+    },
+    {
+      "id": 35,
+      "id_artifact": 118,
+      "text": "Please keep the discussion focused on the topic.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.010811898582127328
+    },
+    {
+      "id": 36,
+      "id_artifact": 118,
+      "text": "You're worthless and nobody wants you here.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.02548104959279862
+    },
+    {
+      "id": 37,
+      "id_artifact": 119,
+      "text": "Let's resolve this calmly.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.02617800144291623
+    },
+    {
+      "id": 38,
+      "id_artifact": 119,
+      "text": "Go away, you are a disgusting person.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.2885484043157895
+    },
+    {
+      "id": 39,
+      "id_artifact": 120,
+      "text": "I appreciate your input, thank you.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.010008794368233456
+    },
+    {
+      "id": 40,
+      "id_artifact": 120,
+      "text": "This is a warning, please follow the rules.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.012027705157223534
+    },
+    {
+      "id": 41,
+      "id_artifact": 121,
+      "text": "Your comment adds no value to the discussion.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.017818688883443085
+    },
+    {
+      "id": 42,
+      "id_artifact": 121,
+      "text": "Stop spreading hate and misinformation.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.021914036346481116
+    },
+    {
+      "id": 43,
+      "id_artifact": 122,
+      "text": "You are a plague and should be removed.",
+      "label_id": 1,
+      "label_name": "hatespeech",
+      "is_hate_speech": true,
+      "hate_score": 0.5520647733141105
+    },
+    {
+      "id": 44,
+      "id_artifact": 122,
+      "text": "I disagree but I will remain respectful.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.012915008862486557
+    },
+    {
+      "id": 45,
+      "id_artifact": 123,
+      "text": "Please provide evidence for that statement.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.01601594674527279
+    },
+    {
+      "id": 46,
+      "id_artifact": 123,
+      "text": "You are trash and I hate you.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.28261233054343105
+    },
+    {
+      "id": 47,
+      "id_artifact": 124,
+      "text": "This was helpful, thanks.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.012450227042656192
+    },
+    {
+      "id": 48,
+      "id_artifact": 124,
+      "text": "I won't tolerate insults here.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.010463019126942854
+    },
+    {
+      "id": 49,
+      "id_artifact": 125,
+      "text": "This is confusing, can you rephrase it?",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.007517815632940251
+    },
+    {
+      "id": 50,
+      "id_artifact": 125,
+      "text": "You are disgusting and should leave.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.2297763882516969
+    },
+    {
+      "id": 51,
+      "id_artifact": 126,
+      "text": "We can disagree without attacking each other.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.011342524310826553
+    },
+    {
+      "id": 52,
+      "id_artifact": 126,
+      "text": "Your idea is wrong, but let's discuss it.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.009445219259985349
+    },
+    {
+      "id": 53,
+      "id_artifact": 127,
+      "text": "I hate everyone involved in this.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.08056581253892035
+    },
+    {
+      "id": 54,
+      "id_artifact": 127,
+      "text": "Please keep it professional.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.01684132824613435
+    },
+    {
+      "id": 55,
+      "id_artifact": 128,
+      "text": "Thanks for your patience.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.011022416544253366
+    },
+    {
+      "id": 56,
+      "id_artifact": 128,
+      "text": "This is a violation of our policy.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.014273548885854928
+    },
+    {
+      "id": 57,
+      "id_artifact": 129,
+      "text": "You are evil and I hope you suffer.",
+      "label_id": 1,
+      "label_name": "hatespeech",
+      "is_hate_speech": true,
+      "hate_score": 0.6184218829909515
+    },
+    {
+      "id": 58,
+      "id_artifact": 129,
+      "text": "Let's de-escalate and continue calmly.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.021866198969882476
+    },
+    {
+      "id": 59,
+      "id_artifact": 130,
+      "text": "Please stop, this is not helpful.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.014310165187146482
+    },
+    {
+      "id": 60,
+      "id_artifact": 130,
+      "text": "Great point, I agree with you.",
+      "label_id": 0,
+      "label_name": "normal",
+      "is_hate_speech": false,
+      "hate_score": 0.007240526139552704
+    }
+  ]
+}

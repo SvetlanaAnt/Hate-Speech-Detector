@@ -1,0 +1,640 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "id_artifact": 101,
+      "text": "Hello",
+      "is_hate": false
+    },
+    {
+      "id": 2,
+      "id_artifact": 101,
+      "text": "I hate you and your group.",
+      "is_hate": true
+    },
+    {
+      "id": 3,
+      "id_artifact": 102,
+      "text": "I disagree but respect your opinion.",
+      "is_hate": false
+    },
+    {
+      "id": 4,
+      "id_artifact": 102,
+      "text": "I think this violates the guidelines and should be reviewed.",
+      "is_hate": false
+    },
+    {
+      "id": 5,
+      "id_artifact": 103,
+      "text": "Let's keep it civil and focus on the facts.",
+      "is_hate": false
+    },
+    {
+      "id": 6,
+      "id_artifact": 103,
+      "text": "I will report you, this is unacceptable.",
+      "is_hate": false
+    },
+    {
+      "id": 7,
+      "id_artifact": 104,
+      "text": "This approach doesn't fit our requirements.",
+      "is_hate": false
+    },
+    {
+      "id": 8,
+      "id_artifact": 104,
+      "text": "Thank you for your help, I appreciate it.",
+      "is_hate": false
+    },
+    {
+      "id": 9,
+      "id_artifact": 105,
+      "text": "Please remove this content; it seems off-topic.",
+      "is_hate": false
+    },
+    {
+      "id": 10,
+      "id_artifact": 105,
+      "text": "I disagree, but I won't insult you.",
+      "is_hate": false
+    },
+    {
+      "id": 11,
+      "id_artifact": 106,
+      "text": "I strongly disagree with this conclusion.",
+      "is_hate": false
+    },
+    {
+      "id": 12,
+      "id_artifact": 106,
+      "text": "Please stop spreading hate.",
+      "is_hate": false
+    },
+    {
+      "id": 13,
+      "id_artifact": 107,
+      "text": "This is confusing; can you clarify what you mean?",
+      "is_hate": false
+    },
+    {
+      "id": 14,
+      "id_artifact": 107,
+      "text": "I disagree with your point, but thanks for sharing.",
+      "is_hate": false
+    },
+    {
+      "id": 15,
+      "id_artifact": 108,
+      "text": "This message is unacceptable; please revise it.",
+      "is_hate": false
+    },
+    {
+      "id": 16,
+      "id_artifact": 108,
+      "text": "Let's discuss this without insults.",
+      "is_hate": false
+    },
+    {
+      "id": 17,
+      "id_artifact": 109,
+      "text": "That comment is out of line.",
+      "is_hate": false
+    },
+    {
+      "id": 18,
+      "id_artifact": 109,
+      "text": "I don't like this, but I'll be respectful.",
+      "is_hate": false
+    },
+    {
+      "id": 19,
+      "id_artifact": 110,
+      "text": "Your argument lacks evidence.",
+      "is_hate": false
+    },
+    {
+      "id": 20,
+      "id_artifact": 110,
+      "text": "Please calm down, there's no need to fight.",
+      "is_hate": false
+    },
+    {
+      "id": 21,
+      "id_artifact": 111,
+      "text": "This behavior is toxic and should stop.",
+      "is_hate": false
+    },
+    {
+      "id": 22,
+      "id_artifact": 111,
+      "text": "Thanks for the update, that's helpful.",
+      "is_hate": false
+    },
+    {
+      "id": 23,
+      "id_artifact": 112,
+      "text": "I hate all of you.",
+      "is_hate": true
+    },
+    {
+      "id": 24,
+      "id_artifact": 112,
+      "text": "This is frustrating, but let's stay polite.",
+      "is_hate": false
+    },
+    {
+      "id": 25,
+      "id_artifact": 113,
+      "text": "You're an idiot, shut up.",
+      "is_hate": false
+    },
+    {
+      "id": 26,
+      "id_artifact": 113,
+      "text": "Could you clarify your point? I might be missing something.",
+      "is_hate": false
+    },
+    {
+      "id": 27,
+      "id_artifact": 114,
+      "text": "Nobody asked you, go away.",
+      "is_hate": false
+    },
+    {
+      "id": 28,
+      "id_artifact": 114,
+      "text": "I disagree, but I'm listening.",
+      "is_hate": false
+    },
+    {
+      "id": 29,
+      "id_artifact": 115,
+      "text": "You are disgusting.",
+      "is_hate": false
+    },
+    {
+      "id": 30,
+      "id_artifact": 115,
+      "text": "Let's keep the conversation respectful.",
+      "is_hate": false
+    },
+    {
+      "id": 31,
+      "id_artifact": 116,
+      "text": "Can you share the source for that claim?",
+      "is_hate": false
+    },
+    {
+      "id": 32,
+      "id_artifact": 116,
+      "text": "This is not acceptable behavior.",
+      "is_hate": false
+    },
+    {
+      "id": 33,
+      "id_artifact": 117,
+      "text": "I hate you and I hope you disappear.",
+      "is_hate": true
+    },
+    {
+      "id": 34,
+      "id_artifact": 117,
+      "text": "Thanks for the clarification.",
+      "is_hate": false
+    },
+    {
+      "id": 35,
+      "id_artifact": 118,
+      "text": "Please keep the discussion focused on the topic.",
+      "is_hate": false
+    },
+    {
+      "id": 36,
+      "id_artifact": 118,
+      "text": "You're worthless and nobody wants you here.",
+      "is_hate": true
+    },
+    {
+      "id": 37,
+      "id_artifact": 119,
+      "text": "Let's resolve this calmly.",
+      "is_hate": false
+    },
+    {
+      "id": 38,
+      "id_artifact": 119,
+      "text": "Go away, you are a disgusting person.",
+      "is_hate": false
+    },
+    {
+      "id": 39,
+      "id_artifact": 120,
+      "text": "I appreciate your input, thank you.",
+      "is_hate": false
+    },
+    {
+      "id": 40,
+      "id_artifact": 120,
+      "text": "This is a warning, please follow the rules.",
+      "is_hate": false
+    },
+    {
+      "id": 41,
+      "id_artifact": 121,
+      "text": "Your comment adds no value to the discussion.",
+      "is_hate": false
+    },
+    {
+      "id": 42,
+      "id_artifact": 121,
+      "text": "Stop spreading hate and misinformation.",
+      "is_hate": false
+    },
+    {
+      "id": 43,
+      "id_artifact": 122,
+      "text": "You are a plague and should be removed.",
+      "is_hate": false
+    },
+    {
+      "id": 44,
+      "id_artifact": 122,
+      "text": "I disagree but I will remain respectful.",
+      "is_hate": false
+    },
+    {
+      "id": 45,
+      "id_artifact": 123,
+      "text": "Please provide evidence for that statement.",
+      "is_hate": false
+    },
+    {
+      "id": 46,
+      "id_artifact": 123,
+      "text": "You are trash and I hate you.",
+      "is_hate": true
+    },
+    {
+      "id": 47,
+      "id_artifact": 124,
+      "text": "This was helpful, thanks.",
+      "is_hate": false
+    },
+    {
+      "id": 48,
+      "id_artifact": 124,
+      "text": "I won't tolerate insults here.",
+      "is_hate": false
+    },
+    {
+      "id": 49,
+      "id_artifact": 125,
+      "text": "This is confusing, can you rephrase it?",
+      "is_hate": false
+    },
+    {
+      "id": 50,
+      "id_artifact": 125,
+      "text": "You are disgusting and should leave.",
+      "is_hate": false
+    },
+    {
+      "id": 51,
+      "id_artifact": 126,
+      "text": "We can disagree without attacking each other.",
+      "is_hate": false
+    },
+    {
+      "id": 52,
+      "id_artifact": 126,
+      "text": "Your idea is wrong, but let's discuss it.",
+      "is_hate": false
+    },
+    {
+      "id": 53,
+      "id_artifact": 127,
+      "text": "I hate everyone involved in this.",
+      "is_hate": false
+    },
+    {
+      "id": 54,
+      "id_artifact": 127,
+      "text": "Please keep it professional.",
+      "is_hate": false
+    },
+    {
+      "id": 55,
+      "id_artifact": 128,
+      "text": "Thanks for your patience.",
+      "is_hate": false
+    },
+    {
+      "id": 56,
+      "id_artifact": 128,
+      "text": "This is a violation of our policy.",
+      "is_hate": false
+    },
+    {
+      "id": 57,
+      "id_artifact": 129,
+      "text": "You are evil and I hope you suffer.",
+      "is_hate": true
+    },
+    {
+      "id": 58,
+      "id_artifact": 129,
+      "text": "Let's de-escalate and continue calmly.",
+      "is_hate": false
+    },
+    {
+      "id": 59,
+      "id_artifact": 130,
+      "text": "Please stop, this is not helpful.",
+      "is_hate": false
+    },
+    {
+      "id": 60,
+      "id_artifact": 130,
+      "text": "Great point, I agree with you.",
+      "is_hate": false
+    },
+    {
+      "id": 61,
+      "id_artifact": 131,
+      "text": "I despise the way you twist everything. Every time you speak, you drag the conversation down, and I want you gone from here.",
+      "is_hate": true
+    },
+    {
+      "id": 62,
+      "id_artifact": 131,
+      "text": "You are a liar and a disgrace. I cannot stand you, and I wish you would disappear and never bother anyone again.",
+      "is_hate": true
+    },
+    {
+      "id": 63,
+      "id_artifact": 132,
+      "text": "You are trash and you ruin everything you touch. Keep your mouth shut and stay away from us.",
+      "is_hate": true
+    },
+    {
+      "id": 64,
+      "id_artifact": 132,
+      "text": "I hate you for what you did. You come in, stir chaos, and then pretend you did nothing wrong.",
+      "is_hate": true
+    },
+    {
+      "id": 65,
+      "id_artifact": 133,
+      "text": "You are pathetic and useless. Nobody wants you around, and you should stop showing your face here.",
+      "is_hate": true
+    },
+    {
+      "id": 66,
+      "id_artifact": 133,
+      "text": "Your behavior is disgusting. I hate you and your crew, and I want nothing to do with you.",
+      "is_hate": true
+    },
+    {
+      "id": 67,
+      "id_artifact": 134,
+      "text": "You are a fraud and a coward. All you do is spread problems, and I am sick of your nonsense.",
+      "is_hate": true
+    },
+    {
+      "id": 68,
+      "id_artifact": 134,
+      "text": "I hope you fail at everything you try. You are a stain on this group and we would be better without you.",
+      "is_hate": true
+    },
+    {
+      "id": 69,
+      "id_artifact": 135,
+      "text": "You make me sick. I never want to hear from you again, because you are poison to every discussion.",
+      "is_hate": true
+    },
+    {
+      "id": 70,
+      "id_artifact": 135,
+      "text": "Thanks for the update. I reviewed the draft carefully and left detailed comments so we can finalize it tomorrow.",
+      "is_hate": false
+    },
+    {
+      "id": 71,
+      "id_artifact": 136,
+      "text": "I disagree with your approach, but I appreciate the effort. Let's compare notes and find a better solution together.",
+      "is_hate": false
+    },
+    {
+      "id": 72,
+      "id_artifact": 136,
+      "text": "Please keep the conversation focused on the facts. Personal attacks do not help and only derail the discussion.",
+      "is_hate": false
+    },
+    {
+      "id": 73,
+      "id_artifact": 137,
+      "text": "This is a long message to document the issue: the service started slowly, then requests queued up, and finally timeouts appeared. We should add monitoring, reduce the payload size, and retry with backoff.",
+      "is_hate": false
+    },
+    {
+      "id": 74,
+      "id_artifact": 137,
+      "text": "I need a clear summary of the changes: what was added, what was removed, and which parts are still in progress.",
+      "is_hate": false
+    },
+    {
+      "id": 75,
+      "id_artifact": 138,
+      "text": "The meeting notes are attached. We agreed on the milestones, assigned owners, and scheduled a follow-up review next week.",
+      "is_hate": false
+    },
+    {
+      "id": 76,
+      "id_artifact": 138,
+      "text": "I am happy to help with testing. Send me the steps and I will run them on my machine and report the results.",
+      "is_hate": false
+    },
+    {
+      "id": 77,
+      "id_artifact": 139,
+      "text": "Here is a longer status report: We fixed the parsing bug, updated the config defaults, and improved logging. The remaining work is to add a fallback model and verify performance on the validation set.",
+      "is_hate": false
+    },
+    {
+      "id": 78,
+      "id_artifact": 139,
+      "text": "Can you clarify the requirements? I want to make sure the implementation matches the expected behavior before we ship.",
+      "is_hate": false
+    },
+    {
+      "id": 79,
+      "id_artifact": 140,
+      "text": "Please be patient while we investigate. We will post an update once the root cause is confirmed.",
+      "is_hate": false
+    },
+    {
+      "id": 80,
+      "id_artifact": 140,
+      "text": "I appreciate your feedback. Even when we disagree, it helps to understand your perspective and improve the final outcome.",
+      "is_hate": false
+    },
+    {
+      "id": 81,
+      "id_artifact": 141,
+      "text": "This is a long note about the dataset: it contains short and long messages, with neutral and emotional language. We should avoid overfitting by using a balanced split and cross-validation.",
+      "is_hate": false
+    },
+    {
+      "id": 82,
+      "id_artifact": 141,
+      "text": "I will be offline for a few hours, but I will respond as soon as I return.",
+      "is_hate": false
+    },
+    {
+      "id": 83,
+      "id_artifact": 142,
+      "text": "The report looks good overall. There are a few typos in the last section, but the analysis is strong.",
+      "is_hate": false
+    },
+    {
+      "id": 84,
+      "id_artifact": 142,
+      "text": "Let's keep the tone constructive. If you think something is wrong, point to specific examples so we can fix them.",
+      "is_hate": false
+    },
+    {
+      "id": 85,
+      "id_artifact": 143,
+      "text": "I ran the script with the new model and it completed without errors. The output file has the expected structure.",
+      "is_hate": false
+    },
+    {
+      "id": 86,
+      "id_artifact": 143,
+      "text": "This is a longer explanation: The model predicts probabilities for each class, then we select the highest score as the label. We also log the score for transparency, which helps during evaluation.",
+      "is_hate": false
+    },
+    {
+      "id": 87,
+      "id_artifact": 144,
+      "text": "Thanks for sharing the logs. They show that the model loaded correctly and the labels were resolved as expected.",
+      "is_hate": false
+    },
+    {
+      "id": 88,
+      "id_artifact": 144,
+      "text": "We should schedule a quick review to discuss the differences between the models and decide which one fits our use case.",
+      "is_hate": false
+    },
+    {
+      "id": 89,
+      "id_artifact": 145,
+      "text": "I like the idea, but we need to consider performance on longer texts because users often write multi-sentence messages.",
+      "is_hate": false
+    },
+    {
+      "id": 90,
+      "id_artifact": 145,
+      "text": "Please add a short summary at the top so readers can understand the key points without reading the entire report.",
+      "is_hate": false
+    },
+    {
+      "id": 91,
+      "id_artifact": 146,
+      "text": "I will prepare a clean dataset by removing duplicates and normalizing whitespace, then share it for review.",
+      "is_hate": false
+    },
+    {
+      "id": 92,
+      "id_artifact": 146,
+      "text": "This is a longer, neutral message: I tested several configurations and the results were stable. The system handled the load, and the latency stayed within the expected range throughout the run.",
+      "is_hate": false
+    },
+    {
+      "id": 93,
+      "id_artifact": 147,
+      "text": "If you have time, can you review the documentation and suggest improvements for clarity?",
+      "is_hate": false
+    },
+    {
+      "id": 94,
+      "id_artifact": 147,
+      "text": "We should follow up with a release checklist before deploying, just to be safe.",
+      "is_hate": false
+    },
+    {
+      "id": 95,
+      "id_artifact": 148,
+      "text": "Great progress so far. The new parser is much more reliable and the code is easier to maintain.",
+      "is_hate": false
+    },
+    {
+      "id": 96,
+      "id_artifact": 148,
+      "text": "I do not agree with the conclusion, but I see how you arrived there. Let's collect more evidence and revisit.",
+      "is_hate": false
+    },
+    {
+      "id": 97,
+      "id_artifact": 149,
+      "text": "This long message is to capture the plan: we will gather samples, label them carefully, run multiple models, and compare outputs. The goal is to choose a model that balances precision and recall for our needs.",
+      "is_hate": false
+    },
+    {
+      "id": 98,
+      "id_artifact": 149,
+      "text": "Could you share the exact command you ran? I want to reproduce the issue exactly as you saw it.",
+      "is_hate": false
+    },
+    {
+      "id": 99,
+      "id_artifact": 150,
+      "text": "Let's keep the thread organized: one topic per message, with clear headers for each section.",
+      "is_hate": false
+    },
+    {
+      "id": 100,
+      "id_artifact": 150,
+      "text": "I appreciate the detailed explanation. It helps me understand the tradeoffs and make a better decision.",
+      "is_hate": false
+    },
+    {
+      "id": 101,
+      "id_artifact": 151,
+      "text": "I hate black people and want them out of our country.",
+      "is_hate": true
+    },
+    {
+      "id": 102,
+      "id_artifact": 152,
+      "text": "Muslims are a disease and should be banned.",
+      "is_hate": true
+    },
+    {
+      "id": 103,
+      "id_artifact": 153,
+      "text": "Jews are evil and should be expelled.",
+      "is_hate": true
+    },
+    {
+      "id": 104,
+      "id_artifact": 154,
+      "text": "Gay people are disgusting and should not exist.",
+      "is_hate": true
+    },
+    {
+      "id": 105,
+      "id_artifact": 155,
+      "text": "Women are inferior and should not be allowed to vote.",
+      "is_hate": true
+    },
+    {
+      "id": 106,
+      "id_artifact": 156,
+      "text": "Immigrants are parasites and should be kicked out.",
+      "is_hate": true
+    }
+  ]
+}
