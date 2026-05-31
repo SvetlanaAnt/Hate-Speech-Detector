@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: rs.ac.uns.ftn.digfor.hatespeech
+OpenIDE-Module-Localizing-Bundle: rs/ac/uns/ftn/digfor/hatespeech/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

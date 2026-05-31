@@ -1,0 +1,62 @@
+### Python build & packaging
+# build outputs
+build/
+# distribution outputs (packages, PyInstaller, etc.)
+dist/
+
+# packaging artifacts
+.eggs/
+*.egg-info/
+*.whl
+# PyInstaller spec files
+*.spec
+# virtual environments
+hatespeech-py/.venv/
+.venv/
+.venv_test/
+# bytecode caches
+__pycache__/
+*.pyc
+
+
+### Python outputs & logs
+# ignore generated outputs
+hatespeech-py/data/output*.json
+!hatespeech-py/data/output.json
+# ignore logs
+hatespeech-py/logs/*.log
+hatespeech-py/logs/*.csv
+!hatespeech-py/logs/hatespeech.log
+
+/hatespeech-py/models/*
+/hatespeech-py/model_evaluation/dataset/*
+/hatespeech-py/model_evaluation/logs/*
+/hatespeech-py/model_evaluation/outputs/*
+
+### Java build outputs
+# NetBeans module packages
+*.nbm
+# optional release outputs
+release/
+# Windows executables
+*.exe
+
+### Java private files (NetBeans)
+# NetBeans private and auto-generated Ant files
+hatespeech/nbproject/private/
+hatespeech/nbproject/build-impl.xml
+hatespeech/nbproject/genfiles.properties
+hatespeech/nbproject/Makefile-*
+hatespeech/nbproject/ant-deploy.xml
+
+### OS junk
+# macOS metadata
+.DS_Store
+
+*.exe
+*.exe:SmartScreen:$DATA
+*.exe:Zone.Identifier:$DATA
+
+
+# USE CASE 
+/use-case/BuildDavidsonBalancedSample/DS2_DavidsonDataset
